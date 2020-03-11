@@ -9,35 +9,49 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
-    .main-contenedor {
-      border: 1px solid red;
+    .header-tag {
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      top: 0;
+      margin-bottom: 82px;
+
+    }
+
+    .main {
+      padding: 16px;
+      margin-top: 82px;
     }
 
     .card-contenedor {
       display: flex;
       justify-content: center;
     }
+
+    p {
+      font-size: .9rem;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><strong><img
+  <header class="header-tag">
+    <nav class=" navbar navbar-expand-lg navbar-light" style="background-color: #cd1f32;">
+      <a class="navbar-brand" href="#"><strong style="color: white;"><img
             src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Univalle.svg" alt="" height="40px"
-            width="40px" />SSRE</strong></a>
+            width="40px" />SSER</strong></a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Javier Torres
             <img
               src="https://images.vexels.com/media/users/3/151709/isolated/preview/098c4aad185294e67a3f695b3e64a2ec-doctor-avatar-icon-by-vexels.png"
               alt="" height="50px" width="50px">
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!-- <a class="dropdown-item" href="#"></a>
-            <a class="dropdown-item" href="#"></a> -->
+            <a class="dropdown-item" href="../index.html">Residentes</a>
+            <!--<a class="dropdown-item" href="#"></a> -->
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Cerrar sesión</a>
           </div>
@@ -46,22 +60,23 @@
     </nav>
   </header>
 
-  <main>
+  <div class="main">
     <div class="container main-contenedor mt-3">
       <div class="row">
         <div class="col card-contenedor">
-          <div class="card mb-3" style="max-width: 600px; width: 60%;">
+          <div class="card mb-3 card-main-div" style="max-width: 600px; width: 60%;">
             <div class="row no-gutters">
-              <div class="col-md-4 pt-1 pb-1">
-                <img src="./utils/pictures/resident-icon.png" class="card-img" alt="">
+              <div class="col-md-4 pt-3 pb-3" style="display: flex; align-items: center;">
+                <a class="nav-link" href="./resident/index.html"><img src="./utils/pictures/resident-icon.png"
+                    class="card-img" alt=""></a>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 " style="display: flex; align-items: center;">
                 <div class="card-body">
                   <h5 class="card-title">John Doe</h5>
-                  <p class="card-text mb-1">Especialiste de Urología</p>
+                  <p class="card-text mb-1">Especialista de Urología</p>
                   <p class="card-text mb-1">Segundo Año de Residencia</p>
                   <p class="card-text mb-1">Hospital Universitario del Valle</p>
-                  <p class="card-text"><small class="text-muted">Rotacion: semana 4</small></p>
+                  <p class="card-text mb-1"><small class="text-muted">Rotacion: semana 4</small></p>
                 </div>
               </div>
             </div>
@@ -70,18 +85,19 @@
       </div>
       <div class="row">
         <div class="col card-contenedor">
-          <div class="card mb-3" style="max-width: 600px; width: 60%;">
+          <div class="card mb-3 card-main-div" style="max-width: 600px; width: 60%;">
             <div class="row no-gutters">
-              <div class="col-md-4 pt-1 pb-1">
-                <img src="./utils/pictures/resident-icon.png" class="card-img" alt="">
+              <div class="col-md-4 pt-3 pb-3" style="display: flex; align-items: center;">
+                <a class="nav-link" href="./resident/index.html"><img src="./utils/pictures/resident-icon.png"
+                    class="card-img" alt=""></a>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 " style="display: flex; align-items: center;">
                 <div class="card-body">
                   <h5 class="card-title">John Doe</h5>
-                  <p class="card-text mb-1">Especialiste de Urología</p>
+                  <p class="card-text mb-1">Especialista de Urología</p>
                   <p class="card-text mb-1">Segundo Año de Residencia</p>
                   <p class="card-text mb-1">Hospital Universitario del Valle</p>
-                  <p class="card-text"><small class="text-muted">Rotacion: semana 4</small></p>
+                  <p class="card-text mb-1"><small class="text-muted">Rotacion: semana 4</small></p>
                 </div>
               </div>
             </div>
@@ -90,18 +106,19 @@
       </div>
       <div class="row">
         <div class="col card-contenedor">
-          <div class="card mb-3" style="max-width: 600px; width: 60%;">
+          <div class="card mb-3 card-main-div" style="max-width: 600px; width: 60%;">
             <div class="row no-gutters">
-              <div class="col-md-4 pt-1 pb-1" style="display: flex; align-items: center;">
-                <img src="./utils/pictures/resident-icon.png" class="card-img" alt="">
+              <div class="col-md-4 pt-3 pb-3" style="display: flex; align-items: center;">
+                <a class="nav-link" href="./resident/index.html"><img src="./utils/pictures/resident-icon.png"
+                    class="card-img" alt=""></a>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 " style="display: flex; align-items: center;">
                 <div class="card-body">
                   <h5 class="card-title">John Doe</h5>
-                  <p class="card-text mb-1">Especialiste de Urología</p>
+                  <p class="card-text mb-1">Especialista de Urología</p>
                   <p class="card-text mb-1">Segundo Año de Residencia</p>
                   <p class="card-text mb-1">Hospital Universitario del Valle</p>
-                  <p class="card-text"><small class="text-muted">Rotacion: semana 4</small></p>
+                  <p class="card-text mb-1"><small class="text-muted">Rotacion: semana 4</small></p>
                 </div>
               </div>
             </div>
@@ -109,7 +126,7 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
 
 
 
@@ -125,6 +142,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <script>
+  </script>
 </body>
 </body>
 
